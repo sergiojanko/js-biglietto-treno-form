@@ -35,3 +35,23 @@ var codOutput = document.getElementById("cod-output");
 var priceOutput = document.getElementById("price-output");
 
 
+//  * Funzione genera ticket
+
+btnGenerate.addEventListener("click", function(){
+    
+    var nameValue = nameField.value;
+    var kmsValue = kmsField.value;
+    var ageValue = ageField.value;
+
+    var ticketPrice = 0.21 * kmsValue;
+    var discountRange = "Tariffa ordinaria";
+
+    if (ageValue === "min") {
+        ticketPrice *= 0.8;
+        discountRange = "Sconto minorenne"
+    } else if (ageValue === "over") {
+        ticketPrice *= 0.6;
+        discountRange = "Sconto Over 65"
+    }
+
+})
