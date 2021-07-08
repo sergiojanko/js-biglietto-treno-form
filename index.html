@@ -10,8 +10,29 @@
   <body>
     <div class="container">
       <div class="content">
-        <h1>Biglietto Treno</h1>
-        <p>Il tuo biglietto costa: <span id="price"></span>&euro;</p>
+        <section id="input-section">
+          <h2>Clacola il prezzo del tuo biglietto</h2>
+          <label for="name-input">Nome e Cognome</label>
+          <input id="name-input" type="text" />
+          <label for="kms-input">KM da percorrere</label>
+          <input id="kms-input" type="number" />
+          <label for="age-input">Fascia d'et&agrave;</label>
+          <select id="age-input">
+            <option value="min">Minorenne</option>
+            <option value="maj">Maggiorenne</option>
+            <option value="over">Over 65</option>
+          </select>
+          <button id="generate">Genera</button>
+          <button id="reset">Annulla</button>
+        </section>
+        <section id="ticket-section" class="hidden">
+          <h2>Il tuo biglietto</h2>
+          <p>Nome passeggero: <span id="name-output"></span></p>
+          <p>Offerta: <span id="discount-output"></span></p>
+          <p>Carrozza: <span id="car-output"></span></p>
+          <p>Codice: <span id="cod-output"></span></p>
+          <p>Costo biglietto: <span id="price-output"></span></p>
+        </section>
       </div>
     </div>
     <script src="./js/script.js"></script>
