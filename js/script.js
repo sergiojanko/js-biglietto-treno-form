@@ -54,4 +54,15 @@ btnGenerate.addEventListener("click", function(){
         discountRange = "Sconto Over 65"
     }
 
+    
+    //  * Output ticket
+
+    console.log(ticketPrice);
+    console.log(discountRange);
+
+    nameOutput.innerHTML = nameValue;
+    discountOutput.innerHTML = discountRange;
+    carOutput.innerHTML = "7";
+    codOutput.innerHTML = "9875";
+    priceOutput.innerHTML = ticketPrice.toFixed(2);
 })
