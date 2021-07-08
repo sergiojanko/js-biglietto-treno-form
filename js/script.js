@@ -34,6 +34,8 @@ var carOutput = document.getElementById("car-output");
 var codOutput = document.getElementById("cod-output");
 var priceOutput = document.getElementById("price-output");
 
+var ticketSection = document.getElementById("ticket-section");
+
 
 //  * Funzione genera ticket
 
@@ -65,4 +67,28 @@ btnGenerate.addEventListener("click", function(){
     carOutput.innerHTML = "7";
     codOutput.innerHTML = "9875";
     priceOutput.innerHTML = ticketPrice.toFixed(2);
+
+    //  * new ticket
+
+    nameField.value = "";
+    ageField.value = "min";
+
+    //  * show ticket
+
+    ticketSection.classList.remove("hidden");
+})
+btnReset.addEventListener("click", function(){
+    
+    nameField.value = "";
+    kmsField.value = 10;
+    ageField.value = "min";
+    
+    nameOutput.innerHTML = "";
+    discountOutput.innerHTML = "";
+    carOutput.innerHTML = "";
+    codOutput.innerHTML = "";
+    priceOutput.innerHTML = 0;
+
+    ticketSection.classList.add("hidden");
+
 })

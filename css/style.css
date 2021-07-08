@@ -8,6 +8,9 @@ body {
   background-color: #002;
   color: #fff;
 }
+.hidden {
+  visibility: hidden;
+}
 
 body * {
   padding: 5px;
