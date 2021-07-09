@@ -71,7 +71,7 @@ btnGenerate.addEventListener("click", function(){
     //  * new ticket
 
     nameField.value = "";
-    ageField.value = "min";
+    ageField.value = "maj";
 
     //  * show ticket
 
@@ -81,7 +81,7 @@ btnReset.addEventListener("click", function(){
     
     nameField.value = "";
     kmsField.value = 10;
-    ageField.value = "min";
+    ageField.value = "maj";
     
     nameOutput.innerHTML = "";
     discountOutput.innerHTML = "";
