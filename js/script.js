@@ -64,7 +64,7 @@ btnGenerate.addEventListener("click", function(){
 
     nameOutput.innerHTML = nameValue;
     discountOutput.innerHTML = discountRange;
-    carOutput.innerHTML = "7";
+    carOutput.innerHTML = Math.floor(Math.random() * 12) + 1;
     codOutput.innerHTML = "9875";
     priceOutput.innerHTML = ticketPrice.toFixed(2);
 
